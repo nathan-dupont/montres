@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos | Montres de luxe</title>
+    <meta name="description" content="Boutique étudiante de montres de luxe haut de gamme">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f172a",
+                        secondary: "#64748b",
+                        accent: "#b45309"
+                    },
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-light tracking-wider text-primary" onclick="event.preventDefault()">CHRONOS</a>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-accent transition-colors" onclick="event.preventDefault()">Collection</a>
+                <a href="#" class="text-gray-600 hover:text-accent transition-colors" onclick="event.preventDefault()">À propos</a>
+                <a href="#" class="text-gray-600 hover:text-accent transition-colors" onclick="event.preventDefault()">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="bg-primary text-white p-8 rounded-lg">
+                <h1 class="text-3xl md:text-4xl font-light mb-4">Collection Prestige 2023</h1>
+                <p class="text-gray-300 max-w-lg">Pièces horlogères exceptionnelles, alliant tradition et innovation.</p>
+                <button class="mt-6 px-6 py-2 bg-accent text-white rounded hover:bg-amber-700 transition-colors">
+                    Découvrir
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-light mb-8 text-primary border-b pb-2">Nos modèles exclusifs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Montre 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=300&h=300&fit=crop" 
+                            alt="Montre Classique Or" 
+                            class="max-h-full max-w-full object-contain"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-primary mb-1">Classique Or</h3>
+                        <p class="text-secondary text-sm mb-2">Cadran argenté, bracelet cuir</p>
+                        <p class="text-primary font-medium mb-4">€4,850</p>
+                        <button class="w-full py-2 bg-primary text-white rounded hover:bg-gray-800 transition-colors">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Montre 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=300&h=300&fit=crop" 
+                            alt="Montre Sport Titanium" 
+                            class="max-h-full max-w-full object-contain"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-primary mb-1">Sport Titanium</h3>
+                        <p class="text-secondary text-sm mb-2">Étanche 200m, chronographe</p>
+                        <p class="text-primary font-medium mb-4">€3,200</p>
+                        <button class="w-full py-2 bg-primary text-white rounded hover:bg-gray-800 transition-colors">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Montre 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=300&h=300&fit=crop" 
+                            alt="Montre Minimaliste" 
+                            class="max-h-full max-w-full object-contain"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-primary mb-1">Minimaliste</h3>
+                        <p class="text-secondary text-sm mb-2">Acier inoxydable, ultra fine</p>
+                        <p class="text-primary font-medium mb-4">€2,750</p>
+                        <button class="w-full py-2 bg-primary text-white rounded hover:bg-gray-800 transition-colors">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Montre 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=300&h=300&fit=crop" 
+                            alt="Montre Héritage" 
+                            class="max-h-full max-w-full object-contain"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-medium text-primary mb-1">Héritage</h3>
+                        <p class="text-secondary text-sm mb-2">Édition limitée, numérotée</p>
+                        <p class="text-primary font-medium mb-4">€7,500</p>
+                        <button class="w-full py-2 bg-primary text-white rounded hover:bg-gray-800 transition-colors">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-light tracking-wider mb-2">CHRONOS</h2>
+                    <p class="text-gray-300 text-sm">Projet étudiant - Horlogerie de prestige</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault()">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault()">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors" onclick="event.preventDefault()">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+                <p>© 2023 Chronos. Tous droits réservés. Projet étudiant.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Fonctionnalité basique du panier
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('panier')) {
+                button.addEventListener('click', () => {
+                    const productName = button.closest('div').querySelector('h3').textContent;
+                    const productPrice = button.closest('div').querySelector('p:last-of-type').textContent;
+                    alert(`"${productName}" (${productPrice}) a été ajouté à votre panier.`);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
